@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trabalhando eventos </title>
+	<link rel="stylesheet"  href="index.css">
+	<script src="Aula_193PraticaMouse.js"></script>
+	<script src="Aula_193Praticaondblclick.js"></script>
+	<script src="Aula_193Praticaonmousedown.js"></script>
+	<script src="Aula_193Praticaonmouseout.js"></script>
+
+</head>
+<body>
+	<h1 class="add">Testando Eventos </h1>
+
+	<div class="conteiner">
+		<h2>Testando o evento ONCLICK</h2>
+
+		 <p>Quando clicar o irá disparar um evento</p>
+
+	 	<button onclick="clicou()"> Clique Aqui</button>
+	 	<p id="evento"></p>
+	</div>
+
+	<div class="conteiner">
+		<h2>Testando o evento ONDBLONCLICK</h2>
+
+		 <p>Quando clicar o duas vezes o evento</p>
+
+	 	<button ondblclick="duoClick()"> Clique 2 vezes Aqui!!</button>
+	 	<p id="duo"></p>
+	</div>
+
+	<div class="conteiner">
+		<h2>Testando o evento ONMOUSEOVER </h2>
+
+		 <p class="destaque">Quando passar com mouse, evento dispara</p>
+
+	 	<button class="exemplo" onmouseover="hover()"> Passe com o mouse Aqui!!</button>
+	 	<p id="over"></p>
+	</div>
+
+	<div class="conteiner">
+		<h2>Testando o evento ONMOUSEOUT </h2>
+
+		 <p class="destaque">Quando o mouse sair do elemento o evento</p>
+
+	 	<button class="exemplo" onmouseout="acao()"> Passe com o mouse Aqui!!</button>
+	 	<p id=""></p>
+	</div>
+</body>
+</html>
