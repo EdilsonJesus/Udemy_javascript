@@ -11,41 +11,79 @@
 </head>
 <body>
 	<h1 class="add">Testando Eventos </h1>
+	<div class="">
+		<div class="conteiner">
+			<h3 class="subtitulo">Testando o evento ONCLICK</h3>
+
+			 <p class="text">Quando clicar o irá disparar um evento</p>
+
+		 	<button class="botao" onclick="clicou()"> Clique Aqui</button>
+		 	<p class="text" id="evento"></p>
+		</div>
+
+		<div class="conteiner">
+			<h3 class="subtitulo">Testando o evento ONDBLONCLICK</h3>
+
+			 <p class="text">Quando clicar o duas vezes o evento</p>
+
+		 	<button class="botao" ondblclick="duoClick()"> Clique 2 vezes Aqui!!</button>
+		 	<p class="text" id="duo"></p>
+		</div>
+
+		<div class="conteiner">
+			<h3 class="subtitulo">Testando o evento ONMOUSEOVER </h3>
+
+			 <p class="destaque">Quando passar com mouse, evento dispara</p>
+
+		 	<button  class="exemplo" onmouseover="hover()"> Passe com o mouse Aqui!!</button>
+		 	<p id="over"></p>
+		</div>
+
+		<div class="conteiner">
+			<h3 class="subtitulo">Testando o evento ONMOUSEOUT </h3>
+
+			 <p class="destaque">Quando o mouse sair do elemento o evento</p>
+
+		 	<button class="exemplo" onmouseout="acao()"> Passe com o mouse Aqui!!</button>
+		 	<p id=""></p>
+		</div>
+	</div>
+
+
+	<h2 class="titulo_secao">Eventos de teclado</h2>
 
 	<div class="conteiner">
-		<h2>Testando o evento ONCLICK</h2>
+		<h3 class="subtitulo">Testando o evento ONKEYDOWN </h3>
 
-		 <p>Quando clicar o irá disparar um evento</p>
+		 <p class="destaque">
+			 Esse evento dispara, depois mostra a tecla  pressionada
+		 </p>
 
-	 	<button onclick="clicou()"> Clique Aqui</button>
-	 	<p id="evento"></p>
+	 	<input type="text" class="input"  onkeydown="acao()"  />
+
 	</div>
 
 	<div class="conteiner">
-		<h2>Testando o evento ONDBLONCLICK</h2>
+		<h3 class="subtitulo">Testando o evento ONKEYUP </h3>
 
-		 <p>Quando clicar o duas vezes o evento</p>
+		 <p class="destaque">
+			 Esse evento dispara somente após a mostrar o caracterer
+		 </p>
 
-	 	<button ondblclick="duoClick()"> Clique 2 vezes Aqui!!</button>
-	 	<p id="duo"></p>
+	 	<input type="text" class="input"  onkeyup="acao()"  />
+
 	</div>
 
 	<div class="conteiner">
-		<h2>Testando o evento ONMOUSEOVER </h2>
+		<h3 class="subtitulo">Testando o evento ONKEYPRESS </h3>
 
-		 <p class="destaque">Quando passar com mouse, evento dispara</p>
+		 <p class="destaque">
+			 Essa função só reconhece teclas de caracteres.
+		 </p>
 
-	 	<button class="exemplo" onmouseover="hover()"> Passe com o mouse Aqui!!</button>
-	 	<p id="over"></p>
+	 	<input type="text" class="input"  onkeypress="acao()"  />
+
 	</div>
 
-	<div class="conteiner">
-		<h2>Testando o evento ONMOUSEOUT </h2>
-
-		 <p class="destaque">Quando o mouse sair do elemento o evento</p>
-
-	 	<button class="exemplo" onmouseout="acao()"> Passe com o mouse Aqui!!</button>
-	 	<p id=""></p>
-	</div>
 </body>
 </html>

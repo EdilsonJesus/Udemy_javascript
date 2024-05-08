@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="aula_199_parte3.js"></script>
+    <title>Capturando caracter </title>
+  </head>
+  <body>
+
+    <h1>A partir de um prototico vamos motar uma solução !</h1>
+
+    <section>
+      <div class="container">
+        <img src="./img/prototico.png" alt="">
+
+      </div>
+    </section>
+
+    <section>
+      <div class="entrada">
+        <input
+        type="text"
+        placeholder="Digite um caracter aqui"
+        onkeyup="distribuiCaracter()"
+        id="entrada"
+        name="entrada_dados"
+        value="">
+      </div>
+
+      <span>Letras:</span>
+      <div class="entrada ">
+        <input
+        type="text"
+        id="apenas_letras"
+        disabled="disabled"
+        value="" />
+      </div>
+
+      <span>Números:</span>
+      <div class="entrada ">
+        <input
+        type="text"
+        id="apenas_numeros"
+        disabled="disabled"
+        value="" />
+      </div>
+    </section>
+
+  </body>
+</html>

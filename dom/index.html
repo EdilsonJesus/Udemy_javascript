@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulando o DOM</title>
+</head>
+<body>
+  <main>
+    <section class="aula_1">
+
+      <h1 class="">Como funciona o DOM</h1>
+
+      <div class="foco">
+
+        <aside class="">
+          <h3>Devemos tomar cuidado, onde o script está sendo colocado!!!</h3>
+          <p class="texto" >
+            Caso a tag scrit seja colocado dentro HEAD, teremos problemas
+            com a sua captura.
+          </p>
+          <p class="texto">
+            Devido a precedência de leitura, o interpretador do browser irá
+            fazer a leitura do arquivo de SCRIPT e não o achará por a arvore
+            não foi montada completamente ainda.
+          </p>
+          <p class="texto">
+            Para isso, o ideal é colocar o arquivo por último depois do rodapé.
+          </p>
+        </aside>
+
+      </div>
+
+    </section>
+
+    <section class="aula_2">
+      <h2>Como capturamos elemento de uma página</h2>
+      <div class="">
+        <img width="640" height="320" src="./img/capturandoElementos.png" alt="">
+      </div>
+      <h2>Vamos fazer na pratica </h2>
+      <div class="">
+        <input
+        type="text"
+        id="nome_usuario"
+        class="campo_texto"
+        placeholder="Informe seu nome"
+        name="nome"
+        value="" />
+
+        <img src="./img/aula_198.png" alt="">
+      </div>
+
+    </section>
+
+
+
+  </main>
+</body>
+<script src="Aula198_domp2.js">
+
+</script>
+</html>
