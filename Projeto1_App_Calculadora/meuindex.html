@@ -13,11 +13,11 @@
 
     <div class="container">
       <div class="row">
-        <div id="resultado" class="col d-flex justify-content-center">
+        <div  class="col d-flex justify-content-center">
           <br />
 
           <div class="calculadora">
-            <input type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
+            <input id="resultado" type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
 
             <div class="row">
               <button onclick="calcular('acao', 'c')" type="button" class="btn btn-dark btn-lg clear font-weight-light">C</button>
@@ -35,8 +35,8 @@
             <div class="row">
               <button onclick="calcular('valor', '4')" type="button" class="btn btn-dark btn-lg font-weight-light">4</button>
               <button onclick="calcular('valor', '5')" type="button" class="btn btn-dark btn-lg font-weight-light">5</button>
-              <button onclick="calcular('acao', '+')" type="button" class="btn btn-dark btn-lg font-weight-light">6</button>
-              <button onclick="calcular('valor', '6')" type="button" class="btn btn-dark btn-lg font-weight-light">+</button>
+              <button onclick="calcular('valor', '6')" type="button" class="btn btn-dark btn-lg font-weight-light">6</button>
+              <button onclick="calcular('acao', '+')" type="button" class="btn btn-dark btn-lg font-weight-light">+</button>
             </div>
 
             <div class="row">
@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <script src="app.js"></script>
+<script src="app.js"></script>
   </body>
 
 </html>
