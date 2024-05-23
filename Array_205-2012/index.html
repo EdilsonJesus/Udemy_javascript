@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="Aula210_array_pesquisa.js">
+
+    </script>
   </head>
   <body>
     <h1>Para que serve Arrays</h1>
@@ -13,5 +16,47 @@
       armazenar infomações do tipo listas.
     </p>
     <img src="./img/imgAula205.png" />
+
+    <h2>Aula 207- Diferença entre o atributo lenght de variáveis do tipo string e array</h2>
+        <p>
+          caso se iniciei um Array, com indices alterados,
+          o resultado da "tamanho" (lenght) será divergente.
+        </p>
+    <code>
+      var lista_frutas = Array() <br>
+
+      lista_frutas[5] = 'Uva' <br>
+      lista_frutas[7] = 'Banana' <br>
+      lista_frutas[8] = 'Morango'<br>
+      lista_frutas[9] = 'Macã' <br>
+      <br>
+      console.log(lista_frutas);
+    </code>
+      <p>
+        o resultado será:
+      </p>
+    <img src="./img/imgAula207.png" alt="">
+
+    <p>
+      Devemos estar atento para não cair nesse erro e ser surpreendido.
+    </p>
+
+
+    <h2>Aula 208 Array Multidimensional</h2>
+
+    <p>Como aprofundamento, temos arrays que aponta para outros Arrays</p>
+    <img src="./img/imgAula208.png" alt="">
+    <code>
+      var lista_coisas = [] <br>
+
+      lista_coisas['frutas'] = ['Banana', 'Maça', 'Morango', 'Uva']<br>
+
+      lista_coisas['pessoas'] = ['João','Maria','Jose']<br>
+
+      console.log(lista_coisas)<br>
+    </code>
+
+    <p>Forma mais complexa</p>
+    <img src="./img/imgAula208_code.png" alt="">
   </body>
 </html>
