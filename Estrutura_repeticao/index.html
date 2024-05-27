@@ -2,10 +2,74 @@
 <html lang="pt-BR" >
   <head>
     <meta charset="utf-8">
-    <script src="Aula-217_Praticando.js"></script>
+    <script src="Aula-218_Lacos-encadeados.js"></script>
     <title></title>
   </head>
   <body>
+    <section>
+      <h1 class="tutilo">Aula 218- Laços Encadeados</h1>
+
+      <div class="container">
+        <h2>Vamos criar uma tabuada</h2>
+
+
+        <input id="campo" type="text" placeholder="Digite qual tabuada deseja">
+        <button onclick="calcularTabuada()" type="button" >Gerar tabuada</button>
+
+        <p id="resultado"></p>
+        <h3>Vamos Transformar isso em pseudocódigo</h3>
+        <img src="./img/pseudoTabuada.png" alt="">
+      </div>
+
+      <div class="container">
+        <h2>Vamos criar uma tabuada 1 ao 10</h2>
+        <img src="./img/img_tabuada.png" alt="">
+        <input id="primeira" type="text" placeholder="Digite a primeira tabuada">
+        <input id="ultima" type="text" placeholder="Digite até onde deseja contar a tabuada">
+        <button onclick="contarTabuada()" type="button">Contar a Tabuada</button>
+          <p id="final"></p>
+      </div>
+
+  </section>
+  <section class="central">
+            <h3>Para compreender melhor vamos ler o pseudocódigo</h3>
+            <img src="./img/pseudoForAninhado.png" alt="">
+
+            <h3>Explicando melhor temos !</h3>
+            Explicação Passo a Passo:
+
+          <p>Função contarTabuada:</p>
+          <ol>
+            <li>
+              Obter valores: Obtemos os valores dos campos de entrada 'primeira' e 'ultima', e o elemento onde o resultado será mostrado.
+            </li>
+            <li>
+              Validar entrada: Verificamos se os valores são números válidos. Se não forem, mostramos uma mensagem de erro e encerramos a função.
+            </li>
+            <li>
+              Converter entrada: Convertamos os valores para números.
+            </li>
+            <li>
+              Verificar ordem: Garantimos que o valor da primeira tabuada seja menor ou igual ao valor da última tabuada. Se não for, mostramos uma mensagem de erro e encerramos a função.
+            </li>
+            <li>
+              Inicializar saída: Inicializamos a variável que armazenará a tabuada como uma string vazia.
+            </li>
+          </ol>
+            <p>Loops aninhados para gerar tabuada:</p>
+          <ol>
+              <li>Primeiro loop: Itera de 'primeira' até 'ultima'.</li>
+              <li>Segundo loop: Gera a tabuada de 1 a 10 para cada valor de 'i'.</li>
+              <li>Atualizar resultado: Atualizamos o conteúdo do elemento 'resultado' com a tabuada gerada.</li>
+          </ol>
+  </section>
+
+
+
+
+
+
+
 
   </body>
 </html>
