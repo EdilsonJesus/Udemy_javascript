@@ -13,13 +13,16 @@ function adicionar() {
     } else {
         // Adiciona o novo objeto ao array
         objetos.push(campo);
-        console.log(objetos); // Debug: Verifica o conteúdo do array no console
-        document.getElementById('campo').value = ""; // Limpa o campo de texto
+         // Debug: Verifica o conteúdo do array no console
+        console.log(objetos);
+        // Limpa o campo de texto
+        document.getElementById('campo').value = "";
     }
 }
 
 function ordenar() {
     // Ordena o array alfabeticamente
     objetos.sort();
-    console.log(objetos); // Debug: Verifica o array ordenado no console
+    // Debug: Verifica o array ordenado no console
+    console.log(objetos);
 }

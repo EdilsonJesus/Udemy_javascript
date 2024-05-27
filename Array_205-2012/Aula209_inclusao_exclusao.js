@@ -5,6 +5,7 @@ lista_frutas[1] = 'Maçã'
 
 //incluir elmentos no final do array
 lista_frutas.push('Uva');
+//lista_frutas.includes('Limão');
 
 //Incluir elementos no inicio do array
 lista_frutas.unshift('Melão')
