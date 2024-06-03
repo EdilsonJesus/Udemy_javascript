@@ -25,22 +25,29 @@ function calcularTabuada() {
         saida += entrada + ' x ' + i + ' = ' + (entrada * i) + '<br />';
     }
 
-    resultado.innerHTML = saida;  // Atualiza o conteúdo do parágrafo com a tabuada
+    // Atualiza o conteúdo do parágrafo com a tabuada
+    resultado.innerHTML = saida;
 }
 
 function contarTabuada() {
-    var primeira = document.getElementById('primeira').value;  // Obtém o valor do primeiro campo de entrada
-    var ultima = document.getElementById('ultima').value;      // Obtém o valor do segundo campo de entrada
-    var resultado = document.getElementById('final');          // Obtém o elemento para mostrar o resultado
+    // Obtém o valor do primeiro campo de entrada
+    var primeira = document.getElementById('primeira').value;
+
+    // Obtém o valor do segundo campo de entrada
+    var ultima = document.getElementById('ultima').value;
+    // Obtém o elemento para mostrar o resultado
+    var resultado = document.getElementById('final');
 
     // Verifica se ambos os valores são números válidos
     if (isNaN(primeira) || primeira.trim() === '' || isNaN(ultima) || ultima.trim() === '') {
         resultado.innerHTML = 'Por favor, digite números válidos.';
         return;
     }
+    // Converte o valor do primeiro campo para número
+    primeira = Number(primeira);
 
-    primeira = Number(primeira);  // Converte o valor do primeiro campo para número
-    ultima = Number(ultima);      // Converte o valor do segundo campo para número
+    // Converte o valor do segundo campo para número
+    ultima = Number(ultima);
 
     // Verifica se o valor da primeira tabuada é menor ou igual ao valor da última tabuada
     if (primeira > ultima) {
@@ -48,14 +55,16 @@ function contarTabuada() {
         return;
     }
 
-    var saida = '';  // Inicializa a variável para armazenar a tabuada
+    // Inicializa a variável para armazenar a tabuada
+    var saida = '';
 
     for (var i = primeira; i <= ultima; i++) {
         saida += 'Tabuada do ' + i + '<br />';
         for (var j = 1; j <= 10; j++) {
             saida += i + ' x ' + j + ' = ' + (i * j) + '<br />';
         }
-        saida += '<br />';  // Adiciona uma quebra de linha extra para separar as tabuadas
+        // Adiciona uma quebra de linha extra para separar as tabuadas
+        saida += '<br />';
     }
 
     resultado.innerHTML = saida;  // Atualiza o conteúdo do parágrafo com a tabuada

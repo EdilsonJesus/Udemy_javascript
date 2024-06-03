@@ -8,6 +8,6 @@ while (x <= 10 ) {
 
 
 
-  console.log(x + '<br/>')
+  console.log(x )
     x++
 }
