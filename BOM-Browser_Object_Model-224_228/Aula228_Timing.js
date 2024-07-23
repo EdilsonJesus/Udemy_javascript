@@ -33,7 +33,7 @@ setInterval(function(){
 // Podemos utilizar o ClearInterval para parar a função
 
 var number = 1;
-
+ 
 // Essa função irá causar a um comportamento inesperado, é somente para exemplificar 
 var x = setInterval(function myFunction(){
     console.log(number);
